@@ -81,7 +81,7 @@ const useM3uStore = defineStore('m3u', {
                     find.urlList.push({
                         source,
                         url: x.uri,
-                        name: `线路${find.urlList.length + 1}：${name}`
+                        name: `线路${find.urlList.length + 1}${name ? `: ${name}` : ''}`
                     })
                 } else {
                     tvList.push({
@@ -89,7 +89,7 @@ const useM3uStore = defineStore('m3u', {
                         urlList: [{
                             source,
                             url: x.uri,
-                            name: `线路1：${name}`
+                            name: `线路1${name ? `: ${name}` : ''}`
                         }]
                     })
                 }
