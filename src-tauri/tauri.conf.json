@@ -38,7 +38,9 @@
       "icons/icon.icns",
       "icons/icon.ico"
     ],
-    "targets": ["msi", "app", "dmg"],
+    "targets": [
+      "nsis"
+    ],
     "windows": {
       "wix": {
         "language": "zh-CN"
