@@ -228,18 +228,17 @@ onMounted(() => {
       width: 100%;
     }
 
-    &.hide {
-      .controls-top {
-        top: -85px
-      }
-
-      .controls-bottom {
-        bottom: -75px
-      }
-    }
 
     .video-area-controls {
+      &.hide {
+        .controls-top {
+          top: -85px
+        }
 
+        .controls-bottom {
+          bottom: -75px
+        }
+      }
 
       .time {
       }
