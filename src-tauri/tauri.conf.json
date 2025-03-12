@@ -1,7 +1,7 @@
 {
   "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
   "productName": "myTvTauri",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "identifier": "com.myTvTauri.kaze",
   "build": {
     "frontendDist": "../dist",
@@ -13,7 +13,7 @@
     "withGlobalTauri": true,
     "windows": [
       {
-        "title": "mytv-tauri",
+        "title": "我的电视",
         "label": "main",
         "width": 900,
         "height": 600,

@@ -25,7 +25,7 @@
                 <div></div>
               </template>
             </el-image>
-            <div class="epg w-full min-w-[600px] overflow-auto">
+            <div class="epg w-full min-w-[600px] overflow-auto" v-if="controls.epgList?.length>0">
               <timeline ref="timelineRef" :epg="controls.epgList"/>
             </div>
           </div>
@@ -58,7 +58,7 @@
                 >
                   <div class="flex justify-between">
                     <span style="float: left">{{ item.name }}</span>
-<!--                    <span class="ml-5">9999ms</span>-->
+                    <!--                    <span class="ml-5">9999ms</span>-->
                   </div>
                 </el-option>
               </el-select>
