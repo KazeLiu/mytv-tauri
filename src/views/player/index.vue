@@ -58,7 +58,7 @@
                 >
                   <div class="flex justify-between">
                     <span style="float: left">{{ item.name }}</span>
-<!--                    <span class="ml-5">9999ms</span>-->
+                    <!--                    <span class="ml-5">9999ms</span>-->
                   </div>
                 </el-option>
               </el-select>
@@ -228,18 +228,17 @@ onMounted(() => {
       width: 100%;
     }
 
-    &.hide {
-      .controls-top {
-        top: -85px
-      }
-
-      .controls-bottom {
-        bottom: -75px
-      }
-    }
 
     .video-area-controls {
+      &.hide {
+        .controls-top {
+          top: -85px
+        }
 
+        .controls-bottom {
+          bottom: -75px
+        }
+      }
 
       .time {
       }
