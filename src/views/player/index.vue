@@ -176,7 +176,7 @@ const video = reactive({
         url: video.activeStreamName
       })
     }
-    controls.refresh()
+    nextTick(controls.refresh)
     // 保存喜好到设置内
     useSettingStore().setSetting({activeStreamList: video.storeActiveStreamList})
   },
@@ -185,7 +185,7 @@ const video = reactive({
     video.checkItem = await store.get(`${getCurrentWindow().label}`);
     video.storeActiveStreamList = useSettingStore().activeStreamList || []
     video.activeStreamName = video.storeActiveStreamList.find(x => x.label == video.checkItem.labelId)?.url || video.checkItem.urlList[0].url;
-    video.changeStream();
+    video.changeStream()
   }
 });
 
